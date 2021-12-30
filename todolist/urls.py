@@ -19,6 +19,7 @@ from django.views.generic import TemplateView
 from core.views import index
 from core.views import monday
 from core.views import tuesday
+from core.views import wednesday
 
 
 urlpatterns = [
@@ -26,7 +27,7 @@ urlpatterns = [
 path('', index),
 path('monday', monday),
 path('tuesday', tuesday),
-path('wednesday', TemplateView.as_view(template_name='wednesday.html')),
+path('wednesday', wednesday),
 path('thursday', TemplateView.as_view(template_name='thursday.html')),
 path('friday', TemplateView.as_view(template_name='friday.html')),
 path('saturday', TemplateView.as_view(template_name='saturday.html')),

@@ -9,8 +9,10 @@
 <h1>list for wednesday
 </h1>
 <ol>
-    <li>work out</li>
-    <li>listen to music</li>
+    {%for todo in todo_list%}
+    <li>{{todo}}</li>
+    {%endfor%}
+
 </ol>
 </body>
 </html>

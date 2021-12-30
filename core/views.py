@@ -15,3 +15,7 @@ def tuesday(request):
     random.shuffle(todo_list)
     return render(request, 'tuesday.html', {'todo_list': todo_list})
 
+def wednesday(request):
+    todo_list = ['eat breakfast', 'work out', 'do homework']
+    random.shuffle(todo_list)
+    return render(request, 'wednesday.html', {'todo_list': todo_list})
